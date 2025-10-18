@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,6 +10,8 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.json());
+app.use(cors({origin:"*", credentials:true}));
+
 
 app.use("/gps", require("./routes/toggelRoute"));
 
