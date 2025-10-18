@@ -18,7 +18,7 @@ app.listen(PORT, () => {
 });
 
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb://localhost:27017/AccessDb';
+const mongoURI = 'mongodb+srv://chinmaypuhan420_db_user:ltrHyDlCOsKn9AIy@cluster0.o4bq1ct.mongodb.net/testStatus';
 
 mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))
